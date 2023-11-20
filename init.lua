@@ -93,7 +93,8 @@ require('packer').startup(function(use)
     }
 
     use ("tjdevries/colorbuddy.nvim")
-    use ("svrana/neosolarized.nvim")
+
+    use("arcticicestudio/nord-vim")
 
 
     -- Automatically set up your configuration after cloning packer.nvim
@@ -105,11 +106,7 @@ require('packer').startup(function(use)
 end)
 
 -- vim.opt.background="dark"
--- vim.cmd 'colorscheme NeoSolarized'
-require('neosolarized').setup({
-    comment_italics = true,
-    background_set = true,
-})
+vim.cmd "colorscheme nord"
 
 vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
 
